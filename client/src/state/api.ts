@@ -114,6 +114,10 @@ export const api = createApi({
     search: build.query<SearchResults, string>({
       query: (query) => `search?query=${query}`,
     }),
+    getUsers: build.query<User[], void>({
+      query: () => "users",
+      providesTags: ["Users"],
+    }),
   })
 })
 
@@ -124,4 +128,5 @@ export const {
   useCreateTaskMutation,
   useUpdateTaskStatusMutation,
   useSearchQuery,
+  useGetUsersQuery,
 } = api;
