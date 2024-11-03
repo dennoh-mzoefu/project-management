@@ -1,7 +1,8 @@
-'use client'
-import { useAppDispatch, useAppSelector } from '@/app/redux';
-import { setIsSidebarCollapsed } from '@/state';
-import { useGetProjectsQuery } from '@/state/api';
+"use client";
+
+import { useAppDispatch, useAppSelector } from "@/app/redux";
+import { setIsSidebarCollapsed } from "@/state";
+import { useGetProjectsQuery } from "@/state/api";
 import {
     AlertCircle,
     AlertOctagon,
@@ -20,24 +21,23 @@ import {
     Users,
     X,
 } from "lucide-react";
-import Image from 'next/image';
-import Link from 'next/link';
-import { usePathname } from 'next/navigation';
-import React, { useState } from 'react'
+import Image from "next/image";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import React, { useState } from "react";
 
-function Sidebar() {
+const Sidebar = () => {
     const [showProjects, setShowProjects] = useState(true);
     const [showPriority, setShowPriority] = useState(true);
 
-
-    const dispatch = useAppDispatch();
     const { data: projects } = useGetProjectsQuery();
-
+    const dispatch = useAppDispatch();
     const isSidebarCollapsed = useAppSelector(
         (state) => state.global.isSidebarCollapsed,
     );
-    const sidebarClassNames = `no-scrollbar fixed flex flex-col h-[100%] justify-between shadow-xl
-    transition-all duration-300 h-full z-40 dark:bg-black overflow-y-hidden bg-white
+
+    const sidebarClassNames = `fixed flex flex-col h-[100%] justify-between shadow-xl
+    transition-all duration-300 h-full z-40 dark:bg-black overflow-y-auto bg-white
     ${isSidebarCollapsed ? "w-0 hidden" : "w-64"}
   `;
 
@@ -47,7 +47,7 @@ function Sidebar() {
                 {/* TOP LOGO */}
                 <div className="z-50 flex min-h-[56px] w-64 items-center justify-between bg-white px-6 pt-3 dark:bg-black">
                     <div className="text-xl font-bold text-gray-800 dark:text-white">
-                        PROJ LIST
+                        EDLIST
                     </div>
                     {isSidebarCollapsed ? null : (
                         <button
@@ -62,12 +62,7 @@ function Sidebar() {
                 </div>
                 {/* TEAM */}
                 <div className="flex items-center gap-5 border-y-[1.5px] border-gray-200 px-8 py-4 dark:border-gray-700">
-                    <Image
-                        src="/logo.png"
-                        alt="Logo"
-                        width={40}
-                        height={40}
-                    />
+                    <Image src="/logo.png" alt="Logo" width={40} height={40} />
                     <div>
                         <h3 className="text-md font-bold tracking-wide dark:text-gray-200">
                             EDROH TEAM
@@ -79,7 +74,7 @@ function Sidebar() {
                     </div>
                 </div>
                 {/* NAVBAR LINKS */}
-                <nav className="z-10 w-full mb-8">
+                <nav className="z-10 w-full">
                     <SidebarLink icon={Home} label="Home" href="/" />
                     <SidebarLink icon={Briefcase} label="Timeline" href="/timeline" />
                     <SidebarLink icon={Search} label="Search" href="/search" />
@@ -150,14 +145,15 @@ function Sidebar() {
                 )}
             </div>
         </div>
-    )
-}
+    );
+};
 
 interface SidebarLinkProps {
     href: string;
     icon: LucideIcon;
     label: string;
 }
+
 const SidebarLink = ({ href, icon: Icon, label }: SidebarLinkProps) => {
     const pathname = usePathname();
     const isActive =
@@ -182,4 +178,4 @@ const SidebarLink = ({ href, icon: Icon, label }: SidebarLinkProps) => {
     );
 };
 
-export default Sidebar
+export default Sidebar;
