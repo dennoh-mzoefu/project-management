@@ -9,9 +9,10 @@ Welcome to **Project Name**! This project helps users manage tasks and monitor p
 The **Project Board** allows you to manage tasks, track statuses, and collaborate with your team seamlessly.
 
 ### Preview:
-![Project Board](./public/screenshots/project-board.png)
 
-> *The Project Board includes columns like "To Do," "In Progress," and "Completed," with drag-and-drop functionality to organize tasks.*
+![Project Board](./client/public/screenshots/project-board.png)
+
+> _The Project Board includes columns like "To Do," "In Progress," and "Completed," with drag-and-drop functionality to organize tasks._
 
 ---
 
@@ -20,19 +21,22 @@ The **Project Board** allows you to manage tasks, track statuses, and collaborat
 The **time-line view** displays how the various projects and tasks are scheduleed with a gantt chart to give the impression of how long each project takes and how they overlap with other projects.
 
 ### Preview:
-![Dashboard](./public/screenshots/timeline.png)
 
-> *The Dashboard features charts, metrics, and recent activity summaries, offering a quick overview of the project's performance.*
+![Dashboard](./client/public/screenshots/timeline.png)
+
+> _The Dashboard features charts, metrics, and recent activity summaries, offering a quick overview of the project's performance._
 
 ---
+
 ## 📊 Dashboard
 
 The **Dashboard** provides key insights and visual representations of your data. It's designed to help you stay on top of your progress and KPIs.
 
 ### Preview:
-![Dashboard](./public/screenshots/dashboard.png)
 
-> *The Dashboard features charts, metrics, and recent activity summaries, offering a quick overview of the project's performance.*
+![Dashboard](./client/public/screenshots/dashboard.png)
+
+> _The Dashboard features charts, metrics, and recent activity summaries, offering a quick overview of the project's performance._
 
 ---
 
@@ -54,10 +58,10 @@ To run this project locally, follow these steps:
    npm prisma generate
     run a migration
     seed the db with the npm run seed
-
-
+   ```
 
 ## 🤝 Contributing
+
 We welcome contributions! To contribute:
 
 Fork the repository.
@@ -77,11 +81,15 @@ Open a pull request.
 Please read our Contributing Guide for more details.
 
 ## 📝 License
+
 This project is licensed under the MIT License. Feel free to use it as you see fit!
 
 ## 💬 Contact
+
 For any questions, feel free to reach out:
 
 # Name: Denis Gichana
+
 #Email: denisgichana162@email.com
+
 # GitHub: https://github.com/dennoh-mzoefu
