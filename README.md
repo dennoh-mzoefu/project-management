@@ -1,6 +1,6 @@
-# Project Name
+# Projct Management System
 
-Welcome to **Project Name**! This project helps users manage tasks and monitor progress efficiently. It features an intuitive **Project Board** and a comprehensive **Dashboard** for analytics.
+Welcome to **Projct Management System**! This project helps users manage tasks and monitor progress efficiently. It features an intuitive **Project Board** and a comprehensive **Dashboard** for analytics.
 
 ---
 
