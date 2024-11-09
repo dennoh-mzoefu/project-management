@@ -1,36 +1,87 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Project Name
 
-## Getting Started
+Welcome to **Project Name**! This project helps users manage tasks and monitor progress efficiently. It features an intuitive **Project Board** and a comprehensive **Dashboard** for analytics.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 📋 Project Board
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The **Project Board** allows you to manage tasks, track statuses, and collaborate with your team seamlessly.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Preview:
+![Project Board](./public/screenshots/project-board.png)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+> *The Project Board includes columns like "To Do," "In Progress," and "Completed," with drag-and-drop functionality to organize tasks.*
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 📊 Timeline view
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+The **time-line view** displays how the various projects and tasks are scheduleed with a gantt chart to give the impression of how long each project takes and how they overlap with other projects.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Preview:
+![Dashboard](./public/screenshots/timeline.png)
 
-## Deploy on Vercel
+> *The Dashboard features charts, metrics, and recent activity summaries, offering a quick overview of the project's performance.*
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
+## 📊 Dashboard
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+The **Dashboard** provides key insights and visual representations of your data. It's designed to help you stay on top of your progress and KPIs.
+
+### Preview:
+![Dashboard](./public/screenshots/dashboard.png)
+
+> *The Dashboard features charts, metrics, and recent activity summaries, offering a quick overview of the project's performance.*
+
+---
+
+## 🚀 Live Demo
+
+[View Live Site](https://master.d25kc6xwxyg1q5.amplifyapp.com/)
+
+---
+
+## 🛠️ Installation
+
+To run this project locally, follow these steps:
+
+1. Clone the repository:
+   ```bash
+   git clone <repo link>
+   cd into client and npm i
+   cd into server and npm i
+   npm prisma generate
+    run a migration
+    seed the db with the npm run seed
+
+
+
+## 🤝 Contributing
+We welcome contributions! To contribute:
+
+Fork the repository.
+Create a new branch for your feature or fix:
+bash
+Copy code
+git checkout -b feature/your-feature-name
+Commit your changes:
+bash
+Copy code
+git commit -m "Add a brief description of your changes"
+Push your branch:
+bash
+Copy code
+git push origin feature/your-feature-name
+Open a pull request.
+Please read our Contributing Guide for more details.
+
+## 📝 License
+This project is licensed under the MIT License. Feel free to use it as you see fit!
+
+## 💬 Contact
+For any questions, feel free to reach out:
+
+# Name: Denis Gichana
+#Email: denisgichana162@email.com
+# GitHub: https://github.com/dennoh-mzoefu
