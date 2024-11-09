@@ -88,8 +88,8 @@ This project is licensed under the MIT License. Feel free to use it as you see f
 
 For any questions, feel free to reach out:
 
-# Name: Denis Gichana
+### Name: Denis Gichana
 
-#Email: denisgichana162@email.com
+### Email: denisgichana162@email.com
 
-# GitHub: https://github.com/dennoh-mzoefu
+### GitHub: https://github.com/dennoh-mzoefu
